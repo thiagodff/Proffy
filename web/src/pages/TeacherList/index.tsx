@@ -1,8 +1,7 @@
 import React from 'react'
 
 import PageHeader from '../../components/PageHeader';
-
-import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
+import TeacherItem from '../../components/TeacherItem';
 
 import './styles.css'
 
@@ -29,32 +28,14 @@ function TeacherList() {
       </PageHeader>
 
       <main>
-        <article className="teacher-item">
-          <header>
-            <img src="https://github.com/thiagodff.png" alt="Thiago Fernandes"/>
-            <div>
-              <strong>Thiago Fernandes</strong>
-              <span>Geografia</span>
-            </div>
-          </header>
-
-          <p>
-            As vezes não sei nem onde eu tô, mas consigo me localizar facilmente em qualquer lugar. Tenho memória fotográfica e nunca fico perdido.
-            <br/><br/>
-            Eu ensino a galera como não se perder na vida, com lições geográficas simples pra você nunca mais precisar de mapa na sua bela vida.
-          </p>
-
-          <footer>
-            <p>
-              Preço/hora
-              <strong>R$ 80,00</strong>
-            </p>
-            <button type="button">
-              <img src={whatsappIcon} alt="Whatsapp"/>
-              Entrar em contato
-            </button>
-          </footer>
-        </article>
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
       </main>
     </div>
   )
